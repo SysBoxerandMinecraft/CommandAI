@@ -1,0 +1,36 @@
+# 模型文件（大文件，不提交）
+models/*.gguf
+models/*.bin
+*.gguf
+*.bin
+
+# 日志文件
+*.log
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# 临时文件
+临时文件夹/
+temp/
+tmp/
+
+# 备份文件
+*.bak
+
+# 敏感配置（包含 API Key）
+userconfig.yaml
+dist/
+build/
+*.spec

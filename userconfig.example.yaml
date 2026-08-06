@@ -1,0 +1,38 @@
+# ====================================
+# CommandAI 配置模板
+# 复制此文件为 userconfig.yaml 并填入你的 API Key
+# ====================================
+
+model:
+  # 选择一种类型: deepseek, kimi, glm, qwen, openai, llama
+  type: deepseek
+  api_key: "your-api-key-here"
+  model: "deepseek-chat"
+
+  # 其他提供商示例:
+  # kimi:
+  #   type: kimi
+  #   api_key: "your-kimi-api-key"
+  #   model: "kimi-k3"
+  #
+  # glm:
+  #   type: glm
+  #   api_key: "your-glm-api-key"
+  #   model: "glm-4-flash"
+  #
+  # qwen:
+  #   type: qwen
+  #   api_key: "your-qwen-api-key"
+  #   model: "qwen-plus"
+
+generation:
+  max_tokens: 1024
+  temperature: 0.7
+  top_p: 0.9
+
+context:
+  max_history_turns: 10
+  system_prompt: "You are a helpful AI assistant."
+
+logging:
+  level: "INFO"
